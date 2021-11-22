@@ -101,3 +101,13 @@ for (let i = 0; i < posts.length; i++) {
 
 container.innerHTML = post;
 
+const likeButton = document.querySelectorAll('.like-button');
+
+const likeCounter = document.querySelectorAll('.js-likes-counter');
+
+for (let i = 0; i < likeButton; i++) {
+    likeButton[i].addEventListener("click", function(){
+        parseInt(likeCounter[i].innerHTML)++
+        console.log(likeCounter[i]);
+    })    
+}
